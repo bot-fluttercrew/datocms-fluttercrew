@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <body>
-  <h1 style="text-align: center; font-family: Ubuntu; font-size: 32px;">Our Works</h1><br>
+  <h1 style="text-align: center; font-family: Ubuntu; font-size: 32px; font-weight: bold;">Our Works</h1><br>
 
   <div class="showcase is-loading" {{ if .Paginator.HasNext }}data-next-url="{{ .Paginator.Next.URL }}"{{ end }}>
     {{ range (where .Paginator.Pages "Type" "works") }}
